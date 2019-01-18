@@ -3,7 +3,7 @@
 Description=Tweet Fetcher Service
 
 [Service]
-ExecStart=/home/upright/.nvm/v8.2.1/bin/node /home/upright/scripts/ccsi_tweetfetcher/index.js
+ExecStart=/home/upright/.nvm/versions/node/v8.2.1/bin/node /home/upright/scripts/ccsi_tweetfetcher/index.js
 Restart=yes
 User=upright
 # Note RHEL/Fedora uses 'nobody', Debian/Ubuntu uses 'nogroup'

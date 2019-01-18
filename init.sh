@@ -1,8 +1,8 @@
 #!/bin/sh
 npm install
 
-sudo cp twitfetcher.service /etc/systemd/system/twitfetcher.service
+sudo cp tweetfetcher.service /etc/systemd/system/tweetfetcher.service
 sudo systemctl daemon-reload
-sudo systemctl enable twitfetcher
-sudo systemctl start twitfetcher
+sudo systemctl enable tweetfetcher
+sudo systemctl start tweetfetcher
 sh ./start.sh

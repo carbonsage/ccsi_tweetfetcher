@@ -1,6 +1,6 @@
 
 [Unit]
-Description=Twit Fetcher Service
+Description=Tweet Fetcher Service
 
 [Service]
 ExecStart=/home/upright/.nvm/v8.2.1/bin/node /home/upright/scripts/ccsi_tweetfetcher/index.js

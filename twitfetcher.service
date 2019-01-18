@@ -1,0 +1,16 @@
+
+[Unit]
+Description=Twit Fetcher Service
+
+[Service]
+ExecStart=/home/upright/.nvm/v8.2.1/bin/node /home/upright/scripts/ccsi_tweetfetcher/index.js
+Restart=yes
+User=upright
+# Note RHEL/Fedora uses 'nobody', Debian/Ubuntu uses 'nogroup'
+Group=upright
+Environment=PATH=/usr/bin:/usr/local/bin
+Environment=NODE_ENV=production
+WorkingDirectory=/home/upright/scripts/ccsi_tweetfetcher/
+
+[Install]
+WantedBy=multi-user.target

@@ -1,3 +1,3 @@
 #!/bin/sh
-sudo systemctl start ccsi_tweetfetcher
-sudo systemctl status ccsi_tweetfetcher
+sudo systemctl start tweetfetcher
+sudo systemctl status tweetfetcher

@@ -97,7 +97,7 @@ stream.on('tweet', function (tweet) {
             console.log(post_d.body)
         })
         .catch(function (err) {
-            console.error("error")
+            console.error(error)
         });
 
     //console.log(tweet)

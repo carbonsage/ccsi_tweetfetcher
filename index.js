@@ -67,7 +67,7 @@ stream.on('tweet', function (tweet) {
     if (typeof (tweet.retweeted_status) !== "undefined") {
         tweet = tweet.retweeted_status;
     }
-    console.log(tweet)
+    console.log(tweet.id)
     getProfileBase64(tweet.user.profile_background_image_url)
         .then(image => {
             post_d = {
@@ -86,7 +86,7 @@ stream.on('tweet', function (tweet) {
             const options = {
                 method: 'POST',
                 //uri: 'https://reportapp-dirisu.herokuapp.com/post/createpost',
-                uri: 'https://www.uprightaip.cloud/post/createpost',
+                uri: 'https://www.uprightapi.cloud/post/createpost',
                 body: post_d,
                 json: true // Automatically stringifies the body to JSON
             };
